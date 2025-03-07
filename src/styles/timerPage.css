@@ -1,0 +1,58 @@
+/* Timer.css */
+.timer-page {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('backgroundperson.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.timer-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.timer-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.timer-display {
+    font-size: 4rem;
+    font-weight: bold;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.timer-container button {
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    gap: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.timer-container button:hover {
+    background-color: #0e0829;
+}

@@ -1,0 +1,87 @@
+/* Basic page layout */
+
+.exercise-page {
+    padding:20px;
+    background: linear-gradient(to bottom right, white, #bad8f2);
+}
+.exercise-page div {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.exercise-container {
+    background-color: #5a5a89;
+}
+/* Header styling */
+.exercise-page h2 {
+    font-size: 5rem;
+    color: rgb(20, 20, 69);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* List styling */
+.exercise-page ul {
+    list-style-type: none;
+    padding: 0;
+    
+
+}
+
+/* Styling each exercise item */
+.exercise-page li {
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.exercise-page li h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.exercise-page li p {
+    color: #777;
+    font-size: 1rem;
+}
+
+
+/* Button styling */
+.exercise-page button {
+    background-color: rgb(20, 20, 69);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.exercise-page button:hover {
+    background-color: #0e0829;
+}
+
+.exercise-page a {
+    text-decoration: none;
+}
+
+/* Loading and error messages */
+.exercise-page p {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

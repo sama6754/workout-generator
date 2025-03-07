@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import '../styles/questionPage.css'
 
 
@@ -178,31 +179,11 @@ const Questions = () => {
           <input
             type="checkbox"
             name="Muscles"
-            value="Abs"
-            checked={formData.Muscles.includes('Abs')}
+            value="Abdominals"
+            checked={formData.Muscles.includes('Abdominals')}
             onChange={handleChange1}
           />
-          Abs
-          </label>
-          <label>
-          <input
-            type="checkbox"
-            name="Muscles"
-            value="Back"
-            checked={formData.Muscles.includes('Back')}
-            onChange={handleChange1}
-          />
-          Back
-          </label>
-          <label>
-          <input
-            type="checkbox"
-            name="Muscles"
-            value="Biceps"
-            checked={formData.Muscles.includes('Biceps')}
-            onChange={handleChange1}
-          />
-          Biceps
+          Abdominals
           </label>
           <label>
           <input
@@ -213,6 +194,16 @@ const Questions = () => {
             onChange={handleChange1}
           />
           Chest
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Forearms"
+            checked={formData.Muscles.includes('Forearms')}
+            onChange={handleChange1}
+          />
+          Forearms
           </label>
           <label>
           <input
@@ -238,11 +229,61 @@ const Questions = () => {
           <input
             type="checkbox"
             name="Muscles"
+            value="Lats"
+            checked={formData.Muscles.includes('Lats')}
+            onChange={handleChange1}
+          />
+          Lats
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Lower Back"
+            checked={formData.Muscles.includes('Lower Back')}
+            onChange={handleChange1}
+          />
+          Lower Back
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Middle Back"
+            checked={formData.Muscles.includes('Middle Back')}
+            onChange={handleChange1}
+          />
+          Middle Back
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Traps"
+            checked={formData.Muscles.includes('Traps')}
+            onChange={handleChange1}
+          />
+          Traps
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Neck"
+            checked={formData.Muscles.includes('Neck')}
+            onChange={handleChange1}
+          />
+          Neck
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
             value="Quadriceps"
             checked={formData.Muscles.includes('Quadriceps')}
             onChange={handleChange1}
           />
-          Quadricpes
+          Quadriceps
           </label>
           <label>
           <input
@@ -268,11 +309,41 @@ const Questions = () => {
           <input
             type="checkbox"
             name="Muscles"
-            value="Lower Back"
-            checked={formData.Muscles.includes('Lower Back')}
+            value="Adductors"
+            checked={formData.Muscles.includes('Adductors')}
             onChange={handleChange1}
           />
-          Lower Back
+          Adductors
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Abductors"
+            checked={formData.Muscles.includes('Abductors')}
+            onChange={handleChange1}
+          />
+          Abductors
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Biceps"
+            checked={formData.Muscles.includes('Biceps')}
+            onChange={handleChange1}
+          />
+          Biceps
+          </label>
+          <label>
+          <input
+            type="checkbox"
+            name="Muscles"
+            value="Calves"
+            checked={formData.Muscles.includes('Calves')}
+            onChange={handleChange1}
+          />
+          Calves
           </label>
           <div class="button-container">
             <button onClick={handleBackStep}>Back</button>
@@ -299,11 +370,51 @@ const Questions = () => {
         <input
           type="checkbox"
           name="Equipment"
-          value="Dumbbells"
-          checked={formData.Equipment.includes('Dumbbells')}
+          value="Body Only"
+          checked={formData.Equipment.includes('Body Only')}
           onChange={handleChange2}
         />
-        Dumbbells
+        Body Weight
+        </label>
+        <label>
+        <input
+          type="checkbox"
+          name="Equipment"
+          value="Dumbbell"
+          checked={formData.Equipment.includes('Dumbbell')}
+          onChange={handleChange2}
+        />
+        Dumbbell
+        </label>
+        <label>
+        <input
+          type="checkbox"
+          name="Equipment"
+          value="Barbell"
+          checked={formData.Equipment.includes('Barbell')}
+          onChange={handleChange2}
+        />
+        Barbell
+        </label>
+        <label>
+        <input
+          type="checkbox"
+          name="Equipment"
+          value="Cable"
+          checked={formData.Equipment.includes('Cable')}
+          onChange={handleChange2}
+        />
+        Cable
+        </label>
+        <label>
+        <input
+          type="checkbox"
+          name="Equipment"
+          value="Machine"
+          checked={formData.Equipment.includes('Machine')}
+          onChange={handleChange2}
+        />
+        Machine
         </label>
         <label>
         <input
@@ -319,244 +430,53 @@ const Questions = () => {
         <input
           type="checkbox"
           name="Equipment"
-          value="Body Weight"
-          checked={formData.Equipment.includes('Body Weight')}
+          value="Bands"
+          checked={formData.Equipment.includes('Bands')}
           onChange={handleChange2}
         />
-        Body Weight
+        Bands
         </label>
         <label>
         <input
           type="checkbox"
           name="Equipment"
-          value="Squat Rack"
-          checked={formData.Equipment.includes('Squat Rack')}
+          value="Medicine Ball"
+          checked={formData.Equipment.includes('Medicine Ball')}
           onChange={handleChange2}
         />
-        Squat Rack
+        Medicine Ball
         </label>
         <label>
         <input
           type="checkbox"
           name="Equipment"
-          value="Flat Bench"
-          checked={formData.Equipment.includes('Flat Bench')}
+          value="Exercise Ball"
+          checked={formData.Equipment.includes('Exercise Ball')}
           onChange={handleChange2}
         />
-        Flat Bench
+        Exercise Ball
         </label>
         <label>
         <input
           type="checkbox"
           name="Equipment"
-          value="Lat Machine"
-          checked={formData.Equipment.includes('Lat Machine')}
+          value="E-Z Curl Bar"
+          checked={formData.Equipment.includes('E-Z Curl Bar')}
           onChange={handleChange2}
         />
-        Lat Machine
+        E-Z Curl Bar
         </label>
         <label>
         <input
           type="checkbox"
           name="Equipment"
-          value="Barbells"
-          checked={formData.Equipment.includes('Barbells')}
+          value="Foam Roll"
+          checked={formData.Equipment.includes('Foam Roll')}
           onChange={handleChange2}
         />
-        Barbells
+        Foam Roll
         </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Leg Curl Machine"
-          checked={formData.Equipment.includes('Leg Curl Machine')}
-          onChange={handleChange2}
-        />
-        Leg Curl Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Leg Extension Machine"
-          checked={formData.Equipment.includes('Leg Extension Machine')}
-          onChange={handleChange2}
-        />
-        Leg Extension Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Seated Row Machine"
-          checked={formData.Equipment.includes('Seated Row Machine')}
-          onChange={handleChange2}
-        />
-        Seated Row Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Shoulder Press Machine"
-          checked={formData.Equipment.includes('Shoulder Press Machine')}
-          onChange={handleChange2}
-        />
-        Shoulder Press Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Treadmill"
-          checked={formData.Equipment.includes('Treadmill')}
-          onChange={handleChange2}
-        />
-        Treadmill
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Leg Press"
-          checked={formData.Equipment.includes('Leg Press')}
-          onChange={handleChange2}
-        />
-        Leg Press
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Chest Press"
-          checked={formData.Equipment.includes('Chest Press')}
-          onChange={handleChange2}
-        />
-        Chest Press
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Cable Machine"
-          checked={formData.Equipment.includes('Cable Machine')}
-          onChange={handleChange2}
-        />
-        Cable Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Pull Up Bar"
-          checked={formData.Equipment.includes('Pull Up Bar')}
-          onChange={handleChange2}
-        />
-        Pull Up Bar
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Elliptical"
-          checked={formData.Equipment.includes('Elliptical')}
-          onChange={handleChange2}
-        />
-        Elliptical
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Smith Machine"
-          checked={formData.Equipment.includes('Smith Machine')}
-          onChange={handleChange2}
-        />
-        Smith Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Ab Crunch Machine"
-          checked={formData.Equipment.includes('Ab Crunch Machine')}
-          onChange={handleChange2}
-        />
-        Ab Crunch Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Preacher Curl Machine"
-          checked={formData.Equipment.includes('Preacher Curl Machine')}
-          onChange={handleChange2}
-        />
-        Preacher Curl Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Bicep Curl Machine"
-          checked={formData.Equipment.includes('Bicep Curl Machine')}
-          onChange={handleChange2}
-        />
-        Bicep Curl Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Fly Machine"
-          checked={formData.Equipment.includes('Fly Machine')}
-          onChange={handleChange2}
-        />
-        Fly Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Thigh Adductor Machine"
-          checked={formData.Equipment.includes('Thigh Adductor Machine')}
-          onChange={handleChange2}
-        />
-        Thigh Adductor Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Tricep Dip Machine"
-          checked={formData.Equipment.includes('Tricep Dip Machine')}
-          onChange={handleChange2}
-        />
-        Tricep Dip Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Glute Kickback Machine"
-          checked={formData.Equipment.includes('Glute Kickback Machine')}
-          onChange={handleChange2}
-
-        />
-        Glute Kickback Machine
-        </label>
-        <label>
-        <input
-          type="checkbox"
-          name="Equipment"
-          value="Stair Master"
-          checked={formData.Equipment.includes('Stair Master')}
-          onChange={handleChange2}
-        />
-        Stair Master
-        </label>
-        <div className="button-container">
+         <div className="button-container">
           <button onClick={handleBackStep}>Back</button>
           <button onClick={handleNext}>Next</button>
 
@@ -606,6 +526,9 @@ const Questions = () => {
         </select>
         <div class="button-container">
           <button onClick={handleBackStep}>Back</button>
+          <Link to={`/exercises?duration=${formData.Duration}&muscles=${formData.Muscles}&equipment=${formData.Equipment}&difficulty=${formData.Difficulty}`}>
+              <button> Finished </button>
+          </Link>
         </div>
         </div>
       </div>

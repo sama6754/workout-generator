@@ -1,0 +1,84 @@
+/* Summary.css */
+.summary-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    background-image: url('backgroundhands.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.workout-header {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+.workout-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.summary-info {
+    width: 45%;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.summary-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.summary-info button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5a5a89;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.summary-info button:hover {
+    background-color: #0e0829;;
+}
+
+.summary-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+}
+
+.summary-page h3 {
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    margin-top: 25px;
+    color: #5a5a89;
+    font-size: 2rem;
+
+}
